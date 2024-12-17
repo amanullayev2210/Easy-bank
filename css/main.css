@@ -76,6 +76,10 @@ body {
        column-gap: 30px;
 }
 
+.sitenav__link {
+  text-decoration: none;
+}
+
 .sitenav__item {
   font-size: 18px;
   line-height: 21.48px;
@@ -437,6 +441,15 @@ body {
   font-weight: 300;
   font-size: 15px;
   line-height: 33.75px;
+  color: #FFFFFF;
+}
+
+.footer__infolink {
+  text-decoration: none;
+}
+
+.footeritem__link {
+  text-decoration: none;
   color: #FFFFFF;
 }
 

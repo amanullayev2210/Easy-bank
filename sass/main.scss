@@ -85,6 +85,10 @@
   column-gap: 30px;
 }
 
+.sitenav__link {
+  text-decoration: none;
+}
+
 .sitenav__item {
   font-size: 18px;
   line-height: 21.48px;
@@ -504,6 +508,15 @@
   font-weight: 300;
   font-size: 15px;
   line-height: 33.75px;
+  color: $white-color;
+}
+
+.footer__infolink {
+  text-decoration: none;
+}
+
+.footeritem__link {
+  text-decoration: none;
   color: $white-color;
 }
 
