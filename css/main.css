@@ -489,6 +489,7 @@ body {
     flex-direction: column;
     text-align: center;
     padding-bottom: 32.75px;
+    gap: 16.75px;
   }
   .footer__privarcy {
     flex-direction: column;
