@@ -1,27 +1,27 @@
 /* public-sans-300 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Public Sans';
     font-weight: 300;
     src: url('../fonts/public-sans-v18-latin-300.woff2') format('woff2'); 
   }
   /* public-sans-regular - latin */
   @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Public Sans';
     font-weight: 400;
     src: url('../fonts/public-sans-v18-latin-regular.woff2') format('woff2'); 
   }
   /* public-sans-500 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
   font-family: 'Public Sans';
   font-weight: 500;
   src: url('../fonts/public-sans-v18-latin-500.woff2') format('woff2'); 
 }
   /* public-sans-700 - latin */
   @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
     font-family: 'Public Sans';
     font-weight: 700;
     src: url('../fonts/public-sans-v18-latin-700.woff2') format('woff2'); 
@@ -49,6 +49,7 @@
 
   .container {
     max-width: 1100px;
+    width: 100%;
     margin-inline: auto;
     padding-inline: 24px;
   }
@@ -337,7 +338,7 @@
 
 // template responsive start
 
-@media only screen and (max-width: 390px) {
+@media only screen and (min-width: 390px) and (max-width: 425px) {
   .temp {
     background-color: $white-color3;
   }
@@ -373,4 +374,203 @@
 }
 // template responsive end
 // template end
+
+// description start
+
+.desc {
+  background-color: $white-color2;
+}
+
+.desc__wrapper {
+  padding-block: 37px 154.34px;
+}
+
+.desc__tittle {
+  margin-block: 0;
+  padding-bottom: 37px;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 41.4px;
+  color: $violet-color;
+}
+
+.desc__list {
+  display: flex;
+  list-style: none;
+  margin-block: 0;
+  padding-left: 0;
+  gap: 30px;
+}
+
+.descitem__wrapper {
+  padding: 30px 24.83px 46.9px 24.98px;
+}
+
+.desc__item {
+  border-radius: 5px;
+  background-color: $white-color;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+
+}
+
+.descitem__spantittle {
+  margin-block: 0;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 13px;
+  color: $silver-color;
+}
+
+.descitem__tittle { 
+  margin-block: 0;
+  padding-block: 13px 8px;
+  font-weight: 300;
+  font-size: 17.02px;
+  line-height: 20.42px;
+  color: $violet-color;
+}
+
+.descitem__text {
+  margin-block: 0;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16.9px;
+  color: $silver-color;
+}
+
+// description responsive start
+
+@media only screen and (min-width: 390px) and (max-width: 425px) {
+
+  .desc__list {
+    flex-direction: column;
+  }
+
+  .descitem__photo {
+    width: 100%;
+  }
+
+  .desc__wrapper {
+    padding-bottom: 70px;
+  }
+}
+// description responsive end
+// description end
 // Main end
+
+// footer start
+
+.footer {
+  background-color: $violet-color;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 82px 81.75px;
+}
+
+.footer__inner {
+  max-width: 583.06px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 20.33px;
+  padding-top: 62px;
+}
+
+.footer__description {
+  display: flex;
+  max-width: 290px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16.75px;
+  margin-block: 0;
+  padding-left: 0px;
+  list-style: none;
+}
+
+.footer__item {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 33.75px;
+  color: $white-color;
+}
+
+.footer__privarcy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+.footer__link {
+  text-decoration: none;
+  padding: 13px 35px;
+  background: linear-gradient(to right, #31D35C, #2BB7DB);
+  border-radius: 50px;
+  color: $white-color;
+  font-size: 14px;
+  line-height: 18.2px ; 
+}
+
+.footer__text {
+  margin-block: 0;
+  padding-top: 23.36px;
+  font-weight: 300;
+  line-height: 16.9px;
+  color: $silver-color;
+  text-align: center;
+}
+
+// footer responsive start
+
+@media only screen and (min-width: 390px) and (max-width: 425px) {
+
+  .footer__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 16px 143px 16px;
+  }
+
+  .footer__info {
+    text-align: center;
+    padding-top: 34.19px;
+  }
+
+  .footer__icons {
+    padding-block: 34.19px 30px;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__description {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 32.75px;
+  }
+
+  .footer__privarcy {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+// footer responsive end
+// footer end
