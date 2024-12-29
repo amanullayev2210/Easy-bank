@@ -350,7 +350,7 @@
 
 // hero responsive start
 
-@media (min-width: 800px) and (max-width: 1099px) {
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
 
   .hero__tittle {
     font-size: 42px;
@@ -368,7 +368,7 @@
 
 }
 
-@media (min-width: 600px) and (max-width: 799px) {
+@media only screen and (min-width: 600px) and (max-width: 799px) {
   
   .hero__tittle {
     font-size: 36px;
@@ -386,7 +386,7 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 634px) {
+@media only screen and (min-width: 600px) and (max-width: 634px) {
   .hero__tittle {
     font-size: 32px;
     line-height: 42px;
@@ -403,7 +403,7 @@
   }
 }
 
-@media (min-width: 541px) and (max-width: 599px) {
+@media only screen and (min-width: 541px) and (max-width: 599px) {
 
   .hero {
     background-color: $white-color;
@@ -473,7 +473,7 @@
 }
 
 
-@media (min-width: 426px) and (max-width: 540px) {
+@media only screen and (min-width: 426px) and (max-width: 540px) {
 
   .hero {
     background-color: $white-color;
@@ -543,7 +543,7 @@
 }
 
 
-@media only screen and (max-width: 425px) {
+@media only screen and (min-width: 391px) and (max-width: 425px){
 
   .hero {
    background-color: $white-color;
@@ -558,17 +558,17 @@
   .hero__desc {
     display: block;
     max-width: 390px;
-    width: 120%;
+    width: 100%;
     background-image: url("/imgs/hero_bgmobile.png");
     background-repeat: no-repeat;
     background-size: cover;
-    transform: translateX(0) translateY(-214%);
+    transform: translateX(0) translateY(-240%);
     object-fit: cover;
   }
 
   .hero__info {
     display: block;
-    margin-top: 353px;
+    margin-top: 333px;
     padding-block: 0;
   }
 
@@ -579,6 +579,7 @@
   .hero__mobile {
     display: block;
     object-fit: cover;
+    width: 100%;
   }
 
   .hero__tittle {
@@ -599,6 +600,66 @@
     text-align: center;
     margin-left: 91px;
   }
+}
+
+
+@media only screen and (min-width: 375px) and (max-width: 390px) {
+  .hero {
+    background-color: $white-color;
+ }
+ 
+   .hero__wrapper {
+     display: block;
+     background-color: $white-color;
+     height: 300px;
+   }
+ 
+   .hero__desc {
+     display: block;
+     max-width: 390px;
+     width: 100%;
+     background-image: url("/imgs/hero_bgmobile.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     transform: translateX(0) translateY(-238%);
+     object-fit: cover;
+   }
+ 
+   .hero__info {
+     display: block;
+     margin-top: 313px;
+     padding-block: 0;
+   }
+ 
+   .hero__bgdesktop {
+     display: none;
+   }
+ 
+   .hero__mobile {
+     display: block;
+     object-fit: cover;
+     width: 100%;
+   }
+ 
+   .hero__tittle {
+     font-size: 36.96px;
+     line-height: 42.5px;
+     text-align: center;
+     color: $violet-color;
+   }
+ 
+   .hero__text {
+     font-size: 14px;
+     line-height: 21px;
+     text-align: center;
+     margin-block: 0 64.3px;
+   }
+ 
+   .hero__link {
+     text-align: center;
+     margin-left: 91px;
+   }
+ 
 }
 
 // hero responsive end
@@ -661,7 +722,7 @@
 
 // template responsive start
 
-@media (min-width: 800px) and (max-width: 1099px) {
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
 
   .temp__tittle {
     padding-block: 105px;
@@ -674,7 +735,7 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 799px) {
+@media only screen and (min-width: 600px) and (max-width: 799px) {
   .temp__tittle {
     padding-block: 95px;
   }
@@ -686,7 +747,7 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 620px) {
+@media only screen and (min-width: 600px) and (max-width: 620px) {
 
   .temp__tittle {
     padding-block: 95px;
@@ -700,7 +761,7 @@
   }
 }
 
-@media (min-width: 426px) and (max-width: 599px) {
+@media only screen and (min-width: 426px) and (max-width: 599px) {
 
   .temp {
     background-color: $white-color3;
@@ -839,7 +900,7 @@
 
 // description responsive start
 
-@media (min-width: 800px) and (max-width: 1099px) {
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
 
   .desc__list{
    justify-content: center;
@@ -865,7 +926,7 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 799px) {
+@media only screen and (min-width: 600px) and (max-width: 799px) {
   .desc__list{
     justify-content: center;
     flex-wrap: wrap;
@@ -891,7 +952,7 @@
    }
 }
 
-@media (min-width: 426px) and (max-width: 599px) {
+@media only screen and (min-width: 426px) and (max-width: 599px) {
   
   .desc__list {
     flex-wrap: wrap;
