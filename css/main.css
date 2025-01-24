@@ -112,6 +112,9 @@ body {
     font-size: 24px;
     color: #2D314D;
   }
+  .close {
+    display: none;
+  }
   .site-header {
     padding-block: 20px;
   }
@@ -157,6 +160,9 @@ body {
     font-size: 24px;
     color: #2D314D;
   }
+  .close {
+    display: none;
+  }
   .site-header {
     padding-block: 20px;
   }
@@ -201,6 +207,9 @@ body {
     display: block;
     font-size: 24px;
     color: #2D314D;
+  }
+  .close {
+    display: none;
   }
   .site-header {
     padding-block: 20px;
