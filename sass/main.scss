@@ -127,6 +127,10 @@
     color: $violet-color;
   }
 
+  .close {
+    display: none;
+  }
+
   .site-header {
     padding-block: 20px;
   }
@@ -180,6 +184,10 @@
     display: block;
     font-size: 24px;
     color: $violet-color;
+  }
+
+  .close {
+    display: none;
   }
 
   .site-header {
@@ -237,6 +245,10 @@
     display: block;
     font-size: 24px;
     color: $violet-color;
+  }
+
+  .close {
+    display: none;
   }
 
   .site-header {
